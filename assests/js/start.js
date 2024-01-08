@@ -4,7 +4,7 @@
     $('#startButton').click(function(event)
     {
     event.preventDefault();
-    window.location.href = "http://localhost:8000/habits/dailyView";
+    window.location.href = "https://habbit-tracker-9lme.onrender.com/habits/dailyView";
     }
 )
 }
