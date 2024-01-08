@@ -1,11 +1,14 @@
 const Habits = require('../../models/habits');
 const Status = require('../../models/status');
 
+//assigned all months name
 const monthNames = [
   "January", "February", "March", "April", "May", "June",
   "July", "August", "September", "October", "November", "December"
   ];
   
+
+// check the today date if it is new the remove older one from db as well
 (async () => {
   try {
     let currentDate = new Date();
@@ -61,6 +64,7 @@ const monthNames = [
   }
 })();
 
+//created function for delay
 function delay(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
 }

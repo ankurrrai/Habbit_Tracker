@@ -1,3 +1,4 @@
+# Habit Tracker
 This project is a habit tracker used to track the habits of of the User on daily and weekly basis.
 
 **Installation**
@@ -7,9 +8,6 @@ To run this application on your local machine, please follow these steps:
 Clone this repository using the following command:
 https://github.com/ankurrrai/Habbit_Tracker.git
 
-Add the environmentalVariable
-1. habbitTrackerMongoURL='mongodb://127.0.0.1:27017/habbit_tracker_dev'
-2. habbitTrackerHostURL='localhost:8000'
 
 Install the required dependencies using the following command:
 $ npm install 
@@ -17,8 +15,11 @@ $ npm install
 Start the application using the following command:
 $ npm start 
 
-Open the application in your web browser by visiting the following URL:
-$ http://localhost:8000 
+Open the application in your web browser by visiting the following URL: <br>
+http://localhost:8000 <br>
+
+## Domain at which this project is live: <br>
+https://habbit-tracker-9lme.onrender.com
 
 **Usage:**
 

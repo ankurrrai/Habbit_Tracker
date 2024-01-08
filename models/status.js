@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
 
+// schema for status
 const statusSchema = new mongoose.Schema({
   date: {
     type: String,

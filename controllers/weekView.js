@@ -1,11 +1,13 @@
 const Habits = require('../models/habits')
 const Status = require('../models/status')
 
+// assigned all month name
 const monthNames = [
     "January", "February", "March", "April", "May", "June",
     "July", "August", "September", "October", "November", "December"
     ];
 
+// render the week page 
 module.exports.weekView= async function(req,res)
 {
     try{
@@ -31,6 +33,7 @@ module.exports.weekView= async function(req,res)
     }
 }
 
+// toggle the stauts according to status
 module.exports.toggleStatus=async function(req,res)
 {
     try {

@@ -1,12 +1,13 @@
 const Habits = require('../models/habits')
 const Status = require('../models/status')
 
-
+// assigned all months name
 const monthNames = [
     "January", "February", "March", "April", "May", "June",
     "July", "August", "September", "October", "November", "December"
     ];
 
+// render the home page with all available habits
 module.exports.home= async function(req,res)
 {
     try{
@@ -33,6 +34,7 @@ module.exports.home= async function(req,res)
     
 }
 
+// create new habit and mark the status for last 7 day include created date as not started
 module.exports.create=async function(req,res)
 {
     try {
@@ -81,7 +83,7 @@ module.exports.create=async function(req,res)
     }
     
 }
-
+// according to query check the status and change the status
 module.exports.toggleStatus=async function(req,res)
 {
     try {
@@ -106,6 +108,7 @@ module.exports.toggleStatus=async function(req,res)
     
 }
 
+// to delete the habbit task
 module.exports.delete=async function(req,res)
 {
     try {

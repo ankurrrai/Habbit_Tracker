@@ -1,5 +1,5 @@
 
-
+// update the status along with habbit
 $('.habit-status-dropdown').on('change',function()
 {
 
