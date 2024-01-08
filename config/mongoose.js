@@ -5,7 +5,8 @@ main().catch(function(err){
 });
 
 async function main(){
-    mongoose.connect('mongodb://127.0.0.1:27017/habbit_tracker_dev');
+    console.log(process.env.habbitTrackerMongoURL)
+    mongoose.connect(process.env.habbitTrackerMongoURL);
 };
 
 const db=mongoose.connection;
